@@ -1,0 +1,165 @@
+{
+	"name": "Mentor_Matching_App-2018-05-05-11-20-06",
+	"projectId": "051fa8cd-daba-4f0c-8093-c69fc9630388",
+	"region": "us-east-2",
+	"state": "NORMAL",
+	"createdDate": "2018-05-05T16:20:09.134Z",
+	"lastUpdatedDate": "2018-05-05T16:21:40.359Z",
+	"consoleUrl": "https://console.aws.amazon.com/mobilehub/home#/051fa8cd-daba-4f0c-8093-c69fc9630388/build",
+	"resources": [
+		{
+			"type": "AWS::Pinpoint::AnalyticsApplication",
+			"name": "mentormatchingapp20180505112006_MobileHub",
+			"arn": "9eafb503e50e46d1924984a331035517",
+			"feature": "analytics",
+			"attributes": {
+				"lastUpdateRequestID": "77c51a25-fa7a-4a59-952a-882a82edf0e5"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "mentormatchingapp_mobileanalytics_MOBILEHUB_167547329",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"role": "mentormatchingapp_auth_MOBILEHUB_167547329"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "mentormatchingapp_mobileanalytics_MOBILEHUB_167547329",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"role": "mentormatchingapp_unauth_MOBILEHUB_167547329"
+			}
+		},
+		{
+			"type": "AWS::Cognito::IdentityPool",
+			"name": "mentormatchingapp_MOBILEHUB_167547329",
+			"arn": "us-east-2:da5dfb64-7ad9-4eec-9ba2-c9a0728e2440",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"poolid": "us-east-2:da5dfb64-7ad9-4eec-9ba2-c9a0728e2440",
+				"roleARNs": "arn:aws:iam::158507582993:role/mentormatchingapp_auth_MOBILEHUB_167547329,arn:aws:iam::158507582993:role/mentormatchingapp_unauth_MOBILEHUB_167547329"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "mentormatchingapp_smsverification_MOBILEHUB_167547329",
+			"arn": "arn:aws:iam::158507582993:role/service-role/mentormatchingapp_smsverification_MOBILEHUB_167547329",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"user-pools-role-key": "user-pools-execution-role"
+			}
+		},
+		{
+			"type": "AWS::Cognito::UserPool",
+			"name": "mentormatchingapp_userpool_MOBILEHUB_167547329",
+			"arn": "us-east-2_hbf109V9H",
+			"feature": "user-signin",
+			"attributes": {
+				"alias-attributes": "[\"email\",\"phone_number\"]",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"mfa-configuration": "ON",
+				"password-policy": "{\"minimumLength\":8,\"requireUppercase\":true,\"requireLowercase\":true,\"requireNumbers\":true,\"requireSymbols\":true}",
+				"region": "us-east-2",
+				"user-pools-client-id": "...redacted_2097766248...",
+				"user-pools-client-secret": "...redacted_-906935533...",
+				"user-pools-id": "us-east-2_hbf109V9H",
+				"user-pools-web-client-id": "7ug9l1opt18t1sd0kdlodjndvd"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "mentormatchingapp_auth_MOBILEHUB_167547329",
+			"arn": "arn:aws:iam::158507582993:role/mentormatchingapp_auth_MOBILEHUB_167547329",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "mentormatchingapp_unauth_MOBILEHUB_167547329",
+			"arn": "arn:aws:iam::158507582993:role/mentormatchingapp_unauth_MOBILEHUB_167547329",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "77c51a25-fa7a-4a59-952a-882a82edf0e5"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "mentormatchingapp-hosting-mobilehub-167547329",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"lastUpdateRequestID": "77c51a25-fa7a-4a59-952a-882a82edf0e5",
+				"region": "us-east-2",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/mentormatchingapp-hosting-mobilehub-167547329",
+				"s3-bucket-website-url": "https://s3.amazonaws.com/mentormatchingapp-hosting-mobilehub-167547329"
+			}
+		},
+		{
+			"type": "AWS::CloudFront::Distribution",
+			"name": "d2pznhds7goox5.cloudfront.net",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"id": "E1Z2KKL2LDJ02C",
+				"lastUpdateRequestID": "77c51a25-fa7a-4a59-952a-882a82edf0e5"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "mentormatchingapp_hosting_MOBILEHUB_167547329",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"role": "mentormatchingapp_auth_MOBILEHUB_167547329"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "mentormatchingapp_hosting_MOBILEHUB_167547329",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "bff97c87-c896-4189-af37-d3a9e163e74c",
+				"role": "mentormatchingapp_unauth_MOBILEHUB_167547329"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "mentormatchingapp-deployments-mobilehub-167547329",
+			"arn": null,
+			"feature": "common",
+			"attributes": {
+				"region": "us-east-2",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/mentormatchingapp-deployments-mobilehub-167547329"
+			}
+		},
+		{
+			"type": "AWS::CloudFormation::Stack",
+			"name": "Development",
+			"arn": null,
+			"feature": "cloud-api",
+			"attributes": {
+				"primary": "true",
+				"region": "us-east-2",
+				"stateSummary": "NOT_YET_DEPLOYED"
+			}
+		}
+	]
+}

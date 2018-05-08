@@ -1,0 +1,19 @@
+{
+	"ProjectName": "Mentor_Matching_App",
+	"ProjectPath": "/Users/yinghuachen/Desktop/Mentor_Matching_App",
+	"InitializationTime": "2018-05-05-11-20-58",
+	"LastConfigurationTime": "2018-05-05-11-20-06",
+	"LastNPMInstallTime": "",
+	"FrontendLastBuildTime": "",
+	"LastPublishTime": "",
+	"BackendLastSyncTime": "2018-05-05-11-21-44",
+	"BackendLastBuildTime": "2018-05-05-11-21-22",
+	"BackendLastPushTime": "2018-05-05-11-21-39",
+	"BackendProjectID": "051fa8cd-daba-4f0c-8093-c69fc9630388",
+	"BackendProjectName": "Mentor_Matching_App-2018-05-05-11-20-06",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/051fa8cd-daba-4f0c-8093-c69fc9630388/build",
+	"BackendProjectCreationTime": "2018-05-05T16:20:09.134Z",
+	"BackendProjectLastUpdatedTime": "2018-05-05T16:21:40.359Z",
+	"Framework": "react-native",
+	"BackendLastSyncToDevTime": "2018-05-05-11-21-44"
+}
